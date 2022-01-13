@@ -1,3 +1,4 @@
+console.log ('aa')
 //TAREA: En otro archivo html (no Index) y otro archivo js (no tarea-clase-5.js),
 // creá un formulario que capture el primer nombre, segundo nombre, apellido/s y edad del usuario
 // también vamos a crear un <h1> que diga Bienvenido!
@@ -12,5 +13,6 @@ botonMandarInformacion.onclick = function(){
     const nombreUsuario = document.querySelector('#nombre-usuario').value
     const apellidoUsuario = document.querySelector('#apellido-usuario').value
     const titulo = document.querySelector('h1')
-    titulo.innerText = `Bienvenido ${nombreUsuario}, ${apellidoUsuario} `
+    titulo.innerText = `Bienvenido ${nombreUsuario}, ${apellidoUsuario}`
+    return false
 }
