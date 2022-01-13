@@ -4,3 +4,13 @@
 // vas a crear un botón de acción que una vez que lo apretás, va a
 // mostrar toda la información junta en un campo de texto
 // Y va a cambiar el <h1> para decir "Bienvenido, nombreDeUsuario"!
+
+
+const botonMandarInformacion = document.querySelector('#mandar-informacion')
+
+botonMandarInformacion.onclick = function(){
+    const nombreUsuario = document.querySelector('#nombre-usuario').value
+    const apellidoUsuario = document.querySelector('#apellido-usuario').value
+    const titulo = document.querySelector('h1')
+    titulo.innerText = `Bienvenido ${nombreUsuario}, ${apellidoUsuario} `
+}
